@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: poppins, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body{
@@ -42,7 +42,7 @@ body{
     color: white;
 }
 
-.hero {
+#hero {
     position: relative;
     background-image: url('images/sambirenteng.jpeg');
     background-size: cover;
@@ -56,18 +56,18 @@ body{
     opacity: 0.5;
 }
 
-.hero h1 {
+#hero h1 {
     font-size: 2rem;
     font-weight: bold;
     margin-bottom: 20px;
 }
 
-.hero p {
+#hero p {
     font-size: 2.1rem;
     margin-bottom: 20px;
 }
 
-.hero::before {
+#hero::before {
     content: "";
     position: absolute;
     top: 0; left: 0; right: 0; bottom: 0;
@@ -113,7 +113,33 @@ body{
     margin-bottom: 20px;
 }
 
+.tradisi-list{
+    display: flex;
+    justify-content: space-between;
+}
+
 .card h5{
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+
+.card2{
+    background-color: #A4B465;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    width: 49%;
+}
+
+.card2 img{
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.card2 h5{
     font-size: 1.3rem;
     margin-bottom: 10px;
 }
@@ -123,7 +149,7 @@ body{
     padding: 10px;
     border-radius: 5px;
     color: white;
-    width: 300px;
+    width: 49%;
 }
 
 .card img{
@@ -132,4 +158,50 @@ body{
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
     margin-bottom: 20px;
+}
+
+.card-text{
+    padding: 0 10px;
+}
+
+.btn{
+    background-color: #626F47;
+    color: white;
+    margin: 10px 0;
+    width: 150px;
+    height: 35px;
+    border-radius: 10px;
+    
+}
+
+.btn a{
+    text-decoration: none;
+}
+
+.btn span{
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.btn2{
+    background-color: #626F47;
+    color: white;
+    margin: 32px 0;
+    width: 150px;
+    height: 35px;
+    border-radius: 10px;
+    
+}
+
+.btn2 a{
+    text-decoration: none;
+}
+
+.btn2 span{
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
 }
