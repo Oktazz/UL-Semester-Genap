@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    scroll-behavior: smooth;
 }
 
 body{
@@ -44,7 +45,7 @@ body{
 
 #hero {
     position: relative;
-    background-image: url('images/sambirenteng.jpeg');
+    background-image: url('images/upscalemedia-transformed\ \(1\).jpeg');
     background-size: cover;
     background-position: center;
     height: 100dvh;
@@ -76,18 +77,28 @@ body{
 }
 
 .hero-text {
-    position: relative; /* agar tidak tertutup oleh ::before */
+    position: relative;
     font-size: 2em;
     font-weight: bold;
-    z-index: 2; /* agar teks di atas lapisan gelap 
-    */
+    z-index: 2;
     color: white;
+    opacity: 0; /* Mulai dari transparan */
+    animation: fadeInHero 1.2s ease-in forwards; /* Animasi fade in */
 }
 
-.sejarah{
-    background-color: #F5ECD5;
-    padding: 50px 20px;
-    /* text-align: center;  */
+@keyframes fadeInHero {
+    from {
+        opacity: 0;
+        transform: translateY(8px); /* Sedikit turun */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#sejarah{
+    padding: 100px 20px;
 }
 
 .sejarah-text{
@@ -98,9 +109,8 @@ body{
     text-align: justify;
 }
 
-.tradisi{
-    background-color: #F5ECD5;
-    padding: 50px 20px;
+#tradisi{
+    padding: 100px 20px;
 }
 
 .tradisi-content{
@@ -123,33 +133,13 @@ body{
     margin-bottom: 10px;
 }
 
-.card2{
-    background-color: #A4B465;
-    padding: 10px;
-    border-radius: 5px;
-    color: white;
-    width: 49%;
-}
-
-.card2 img{
-    width: 100%;
-    height: auto;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-    margin-bottom: 20px;
-}
-
-.card2 h5{
-    font-size: 1.3rem;
-    margin-bottom: 10px;
-}
-
 .card{
-    background-color: #A4B465;
+    background-color: #F5ECD5;
     padding: 10px;
     border-radius: 5px;
-    color: white;
+    color: black;
     width: 49%;
+    border: #626F47 1px solid;
 }
 
 .card img{
@@ -185,23 +175,26 @@ body{
     font-weight: bold;
 }
 
-.btn2{
-    background-color: #626F47;
-    color: white;
-    margin: 32px 0;
-    width: 150px;
-    height: 35px;
-    border-radius: 10px;
-    
+#kondisi{
+    padding: 100px 20px;
 }
 
-.btn2 a{
-    text-decoration: none;
+.kondisi-content{
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    text-align: justify;
+
 }
 
-.btn2 span{
+#footer{
+    background-color: #A4B465;
+    padding: 20px 0;
+    text-align: center;
     color: white;
-    text-decoration: none;
-    font-size: 15px;
-    font-weight: bold;
+}
+
+#footer p{
+    margin-bottom: 15px;
 }
