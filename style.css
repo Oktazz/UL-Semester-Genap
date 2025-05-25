@@ -133,39 +133,105 @@ body{
     margin-bottom: 10px;
 }
 
-.card{
+/* Card basic style */
+.card {
     background-color: #F5ECD5;
     padding: 10px;
     border-radius: 5px;
     color: black;
-    width: 49%;
+    width: 60%;
     border: #626F47 1px solid;
+    transition: all 0.4s cubic-bezier(.4,2,.6,1);
+    overflow: hidden;
+    margin-bottom: 20px;
 }
-
-.card img{
+.card img {
     width: 100%;
     height: auto;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
     margin-bottom: 20px;
 }
-
-.card-text{
+.card-text {
     padding: 0 10px;
+    position: relative;
 }
 
-.btn{
+/* Sembunyikan checkbox */
+.toggle-more {
+    display: none;
+}
+
+/* Default: more-text tertutup */
+.card-text .more-text {
+    max-height: 0;
+    opacity: 0;
+    transition: max-height 0.8s cubic-bezier(.4,2,.6,1), opacity 0.3s;
+    overflow: hidden;
+}
+
+/* Jika checkbox dicentang, tampilkan more-text hanya di card itu */
+.card-text .toggle-more:checked ~ .more-text {
+    max-height: 325px;
+    opacity: 1;
+}
+
+/* Tombol Selengkapnya */
+.selengkapnya-btn {
+    position: relative;
+    display: inline-block;
     background-color: #626F47;
     color: white;
-    margin: 10px 0;
-    width: 150px;
-    height: 35px;
-    border-radius: 10px;
-    
+    padding: 5px 14px;
+    text-align: center;
+    margin-top: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
 }
 
-.btn a{
-    text-decoration: none;
+/* Ganti teks tombol saat aktif */
+.card-text .toggle-more:checked ~ .selengkapnya-btn span {
+    visibility: hidden;
+}
+.card-text .toggle-more:checked ~ .selengkapnya-btn::after {
+    content: "Tutup";
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    position: absolute;
+    left: 0; right: 0;
+    text-align: center;
+    top: 0;
+}
+
+/* Responsive (optional) */
+.tradisi-list {
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+
+/* ...existing code... */
+
+.btn{
+    display: inline-block;
+    background-color: #626F47;
+    color: white;
+    padding: 5px 14px;
+    text-align: center;
+    margin-top: 20px;
+    border-radius: 5px;
+    position: relative;
+}
+
+.btn:hover{
+    background-color: #4A5B3A;
+    transition: all 0.3s ease-in-out;
 }
 
 .btn span{
