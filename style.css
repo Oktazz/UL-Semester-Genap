@@ -98,7 +98,7 @@ body{
 }
 
 #sejarah{
-    padding: 100px 20px;
+    padding: 80px 20px;
 }
 
 .sejarah-text{
@@ -110,22 +110,20 @@ body{
 }
 
 #tradisi{
-    padding: 100px 20px;
+    padding: 80px 20px;
+    /* max-height: auto; */
+
 }
 
 .tradisi-content{
-    max-width: 800px;
+    max-width: 90%;
     margin: 0 auto;
 }
 
 .tradisi-content h2{
     font-size: 1.7rem;
     margin-bottom: 20px;
-}
-
-.tradisi-list{
-    display: flex;
-    justify-content: space-between;
+    text-align: center;
 }
 
 .card h5{
@@ -134,17 +132,21 @@ body{
 }
 
 /* Card basic style */
-.card {
+.card, .card-2, .card-3 {
+    width: 300px;
+    min-height: 500px;
     background-color: #F5ECD5;
     padding: 10px;
     border-radius: 5px;
     color: black;
-    width: 60%;
     border: #626F47 1px solid;
     transition: all 0.4s cubic-bezier(.4,2,.6,1);
     overflow: hidden;
     margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
 }
+
 .card img {
     width: 100%;
     height: auto;
@@ -152,9 +154,30 @@ body{
     border-top-right-radius: 5px;
     margin-bottom: 20px;
 }
+
+.card-2 img {
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.card-3 img {
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    margin-bottom: 20px;
+}
+
 .card-text {
     padding: 0 10px;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    flex: 1 1 auto;
 }
 
 /* Sembunyikan checkbox */
@@ -170,8 +193,12 @@ body{
     overflow: hidden;
 }
 
-/* Jika checkbox dicentang, tampilkan more-text hanya di card itu */
 .card-text .toggle-more:checked ~ .more-text {
+    max-height: 500px; /* atau sesuai kebutuhan */
+    opacity: 1;
+}
+
+.card-text .toggle-more:checked ~ .more-text2 {
     max-height: 325px;
     opacity: 1;
 }
@@ -179,15 +206,18 @@ body{
 /* Tombol Selengkapnya */
 .selengkapnya-btn {
     position: relative;
-    display: inline-block;
+    display: block;
     background-color: #626F47;
     color: white;
     padding: 5px 14px;
     text-align: center;
-    margin-top: 20px;
+    margin-top: auto ;
     border-radius: 5px;
     cursor: pointer;
     font-weight: bold;
+    box-sizing: border-box;
+    width: 100%;
+
 }
 
 /* Ganti teks tombol saat aktif */
@@ -202,19 +232,16 @@ body{
     position: absolute;
     left: 0; right: 0;
     text-align: center;
-    top: 0;
 }
 
-/* Responsive (optional) */
+
 .tradisi-list {
     display: flex;
-    margin: 0 auto;
-    justify-content: center;
-    align-items: center;
     gap: 20px;
+    justify-content: center;
+    align-items: flex-start;
     flex-wrap: wrap;
 }
-
 
 /* ...existing code... */
 
@@ -242,7 +269,7 @@ body{
 }
 
 #kondisi{
-    padding: 100px 20px;
+    padding: 80px 20px;
 }
 
 .kondisi-content{
@@ -252,6 +279,51 @@ body{
     line-height: 1.5;
     text-align: justify;
 
+}
+
+#wisata{
+    padding: 80px 20px;
+}
+
+.wisata-content{
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.wisata-content h2{
+    font-size: 1.7rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.wisata-content p{
+    font-size: 1.2rem;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.wisata-list{
+    display: grid;
+    justify-content: center;
+    gap: 10px;
+    grid-template-columns: 30% 30% 30%;
+    grid-template-rows: 300px;
+}
+
+.wisata-item{
+    background-color: #F5ECD5;
+    padding: 10px;
+    border-radius: 5px;
+    color: black;
+    border: #626F47 1px solid;
+    transition: all 0.4s cubic-bezier(.4,2,.6,1);
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.wisata-item p{
+    font-size: 1.2rem;
+    text-align: start
 }
 
 #footer{
