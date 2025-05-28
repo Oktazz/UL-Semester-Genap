@@ -500,5 +500,17 @@ body{
     .card, .card-2, .card-3 {
         width: 90%;
     }
+
+    .card-text p{
+        font-size: 0.95rem;
+    }
+
+    .card h5, .card-2 h5, .card-3 h5 {
+        font-size: 1.1rem;
+    }
+
+    .slideshow{
+        aspect-ratio: 16 / 9; /* Atur rasio aspek sesuai kebutuhan */
+    }
 }
 
