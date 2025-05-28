@@ -26,7 +26,7 @@ body{
 .nav ul{
     list-style: none;
     display: flex;
-    gap: 20px;
+    gap: 30px;
 }
 
 .nav ul li{
@@ -37,6 +37,13 @@ body{
     text-decoration: none;
     color: white;
     font-weight: bold;
+    padding-bottom: 3px;
+}
+
+.nav ul li a:hover{
+    border-bottom: 3px solid white;
+    transition: all 0.2s ease-in-out;
+
 }
 
 .nav h1{
@@ -83,7 +90,7 @@ body{
     z-index: 2;
     color: white;
     opacity: 0; /* Mulai dari transparan */
-    animation: fadeInHero 1.2s ease-in forwards; /* Animasi fade in */
+    animation: fadeInHero 1.3s ease-in forwards; /* Animasi fade in */
 }
 
 @keyframes fadeInHero {
@@ -102,7 +109,7 @@ body{
 }
 
 .sejarah-text{
-    max-width: 800px;
+    max-width: 1000px;
     margin: 0 auto;
     font-size: 1.2rem;
     line-height: 1.5;
@@ -111,8 +118,6 @@ body{
 
 #tradisi{
     padding: 80px 20px;
-    /* max-height: auto; */
-
 }
 
 .tradisi-content{
@@ -154,6 +159,11 @@ body{
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
     margin-bottom: 20px;
+}
+
+.card:hover, .card-2:hover, .card-3:hover,
+.wisata-item:hover {
+    scale: 1.02;
 }
 
 .card-text {
@@ -281,7 +291,7 @@ body{
 }
 
 .kondisi-content{
-    max-width: 800px;
+    max-width: 1000px;
     margin: 0 auto;
     font-size: 1.2rem;
     line-height: 1.5;
@@ -384,6 +394,19 @@ body{
 
 #footer p{
     margin-bottom: 15px;
+}
+
+@keyframes appear{
+    from{
+        opacity: 0;
+        transform: translateY(100px);
+        scale: 0.9;
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0px);
+        scale: 1;
+    }
 }
 
 @media only screen and (max-width: 1080px) {

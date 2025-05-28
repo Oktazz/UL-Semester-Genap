@@ -8,3 +8,4 @@ document.querySelectorAll('.wisata-item').forEach(item => {
         }
     });
 });
+
