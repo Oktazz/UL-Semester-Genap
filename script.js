@@ -9,3 +9,21 @@ document.querySelectorAll('.wisata-item').forEach(item => {
     });
 });
 
+// animasi 
+function revealOnScroll() {
+  const reveals = document.querySelectorAll('#sejarah, #kondisi, #tradisi, #wisata');
+
+  for (let i = 0; i < reveals.length; i++) {
+    const windowHeight = window.innerHeight;
+    const elementTop = reveals[i].getBoundingClientRect().top;
+    const revealPoint = 150;
+
+    if (elementTop < windowHeight - revealPoint) {
+      reveals[i].classList.add('active');
+    } else {
+      reveals[i].classList.remove('active');
+    }
+  }
+}
+
+window.addEventListener('scroll', revealOnScroll);
