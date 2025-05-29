@@ -40,7 +40,7 @@ menuIcon.addEventListener('click', () => {
 // responsive judul nav
 function updateHeading(){
   const h1 = document.getElementById('judul');
-  if (window.innerWidth < 1080){
+  if (window.innerWidth <= 1080){
     h1.textContent = 'Sambirenteng';
   }
   else{
