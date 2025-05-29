@@ -27,3 +27,27 @@ function revealOnScroll() {
 }
 
 window.addEventListener('scroll', revealOnScroll);
+
+// responsive menu
+const menuIcon = document.getElementById('menu-icon');
+const menuList = document.getElementById('menu-list');
+
+menuIcon.addEventListener('click', () => {
+    menuList.classList.toggle('hidden');
+});
+
+
+// responsive judul nav
+function updateHeading(){
+  const h1 = document.getElementById('judul');
+  if (window.innerWidth < 1080){
+    h1.textContent = 'Sambirenteng';
+  }
+  else{
+    h1.textContent = 'Sambirenteng; Desa Peninggalan Bali Aga';
+  }
+}
+
+updateHeading();
+
+window.addEventListener('resize', updateHeading);
