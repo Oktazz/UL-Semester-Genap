@@ -528,15 +528,6 @@ body{
         font-size: 50%;
     }
 
-    .tradisi-list {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .card, .card-2, .card-3 {
-        width: 90%;
-    }
-
     .card-text p{
         font-size: 0.95rem;
     }
