@@ -85,7 +85,7 @@ function showLanguagePopup() {
 function goToLanguage(lang) {
   localStorage.setItem('selectedLanguage', lang); // simpan pilihan bahasa
   if (lang === 'id') {
-    window.location.href = 'index-id.html';
+    window.location.href = 'index.html';
   } else if (lang === 'en') {
     window.location.href = 'index-en.html';
   }
