@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sambirenteng</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css"
+    />
+    <link rel="stylesheet" href="style-en.css">
+</head>
+<body>
+    <section class="navbar">
+        <div class="nav">
+            <h1 id="judul">Sambirenteng; The Ancient Bali Aga Village</h1>
+            <div id="menu-icon" class="menu-icon">
+                <i class="ph-fill ph-list"></i>
+            </div>
+            <ul id="menu-list" class="hidden"> 
+                <li><a href="#hero" class="nav-link">Home</a></li>
+                <li><a href="#sejarah" class="nav-link">History</a></li>
+                <li><a href="#kondisi" class="nav-link">Village Condition</a></li>
+                <li><a href="#tradisi" class="nav-link">Tradision</a></li>  
+                <li><a href="#wisata" class="nav-link">Destinations</a></li>
+                <li><a href="#" class="nav-link" id="language-menu" onclick="showLanguagePopup(); return false;">🌐 Language</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <div id="language-selector">
+        <div class="selector-box">
+        <h2>Pilih Bahasa / Choose Language</h2>
+            <div class="button-box">
+                <button onclick="goToLanguage('id')">Bahasa Indonesia</button>
+                <button onclick="goToLanguage('en')">English</button>
+            </div>
+        </div>
+    </div>
+
+    <section id="hero">
+        <div class="hero-text">
+            <h2>Welcome to Sambirenteng</h2>
+            <p>Discover the beauty and rich culture of our village.</p>
+        </div>
+    </section>
+
+    <section id="sejarah">
+        <div class="sejarah-text">
+            <h2>History of Sambirenteng</h2>
+            <p>
+                Once upon a time, there was a kingdom located on the edge of the Batur Caldera, in Kintamani District, Bangli Regency. The kingdom's territory was vast, reaching as far as the Batu Sungu landmark in the northern part of the realm.
+                <br><br>
+                The kingdom was called Bali-Ingkang, and legend has it that its king was a descendant of Sri Aji Maya Denawa.
+
+                At one time, the Bali-Ingkang Kingdom was attacked by enemies, and the king was forced to retreat to a dense forested area on a hill located to the north of the kingdom.
+                <br><br>
+                There, the king stayed (in Balinese, makolem) for quite some time. Today, this forested hilly area is known as Alas Metahun or Alas Makolem. Once the kingdom was reclaimed, the king returned to resume his rule.
+                <br><br>
+                When the Bali-Ingkang Kingdom was about to be attacked by the forces of Sri Arya Gajah Para, the king dispatched a military unit known as the Kanca, consisting of two hundred soldiers (Kanca Satak), tasked with defending the northern part of the kingdom. This unit built a fortress in the northeastern region of the kingdom, which is now known as Tembok Village.
+                <br><br>
+                The central command post was established in a very dense forest called Kayu Samah, where one hundred soldiers were stationed.
+                <br><br>
+                Whenever the commander issued orders to his troops, he would say "Sami-Ranta" (an Old Balinese phrase meaning "All Ready").
+                <br><br>
+                Over time, this forested area of Kayu Samah, which served as a command center where everyone was always “Sami-Ranta” (all ready), gradually became known as Sambirenteng — the name of the village today.
+            </p>
+        </div>
+    </section>
+
+    <section id="kondisi">
+        <div class="kondisi-content">
+            <h2>Village Condition</h2>
+            <p>
+                Sambirenteng Village is a village located in the Tejakula District, Buleleng Regency, Bali Province. It is situated at 89º.44 South Latitude and 155º.22 East Longitude. The village covers an area of 940 hectares, and is composed of four hamlets: Sambirenteng Hamlet, Benben Hamlet, Geretek Hamlet, and Sila Gading Hamlet.
+                <br><br>
+                As of the year 2017, the total population of Sambirenteng Village was 5,197 people, consisting of 2,712 males and 2,485 females.
+            </p>
+        </div>
+    </section>
+
+    <section id="tradisi">
+        <div class="tradisi-content">
+            <h2>Unique Traditions of Sambirenteng</h2>
+            <div class="tradisi-list">
+              <!-- Card 1 -->
+                <div class="card">
+                    <div class="slideshow">
+                        <img src="images/cakcakan-2.jpg" alt="Cakcakan">
+                        <img src="images/mecakcakan.jpg" alt="Cakcakan">
+                        <img src="images/cakcakan-1.jpg" alt="Cakcakan">
+                        
+                    </div>    
+                    <div class="card-text">
+                        <h5>Mecakcakan</h5>
+                        <p>A unique rooster fighting tradition usually held before the Negakang tradition.</p>
+                        <input type="checkbox" id="toggle1" class="toggle-more"/>
+                        <label for="toggle1" class="btn selengkapnya-btn"><span>More Info</span></label>
+                        <div class="more-text">
+                            <br>
+                            <p>
+                                Cakcakan is a traditional rooster-matching ritual held by the customary village community of Sambirenteng.
+                                <br>
+                                According to the beliefs of the Sambirenteng people, in the past, as Tilem Kepitu (the seventh new moon) approached, strange and unusual occurrences began to take place in the village. In response, the village elders engaged in deep meditation. During this meditation, they received a pawisik (spiritual message or divine revelation) instructing them to perform a pecaruan cakcakan—a ritual offering involving the rooster-matching ceremony.
+                                <br>
+                                Following this spiritual guidance, the Cakcakan ceremony was held, which later developed into the Cakcakan Tradition, observed annually during Tilem Kepitu.
+                            </p>
+                        </div>
+                    </div>   
+                </div>
+
+                <!-- Card 2 -->
+                <div class="card-2">
+                    <div class="slideshow">
+                        <img src="images/negakang-2.jpg" alt="Negakang">
+                        <img src="images/negakang.jpeg" alt="Negakang">
+                        <img src="images/negakang-4.jpg" alt="Negakang">
+                    </div>    
+                    <div class="card-text">
+                        <h5>Negakang</h5>
+                        <p>A communal meal tradition at the village center after Mecakcakan, involving the entire village.</p>
+                        <input type="checkbox" id="toggle2" class="toggle-more"/>
+                        <label for="toggle2" class="btn-2 selengkapnya-btn"><span>More Info</span></label>
+                        <div class="more-text">
+                            <br>
+                            <p>
+                                In the Negakang / Megibung tradition, the community brings rice and meat dishes from the Cakcakan ritual offerings, known as be cundang. This tradition takes place in the village center, where all the villagers gather and take their designated seats.
+                                <br>
+                                The signal to begin the tradition is given by the sounding of the kul-kul (a traditional bamboo slit drum), played by the village priest (pemangku).
+                                <br>
+                                Everything is done simultaneously, symbolizing the unity and togetherness of the people of Sambirenteng Village.
+                            </p>
+                        </div>
+                    </div>   
+                </div>
+
+                <!-- Card 3 -->
+                <div class="card-3">
+                    <div class="slideshow">
+                        <img src="images/ngerebeg-2.jpg" alt="Ngerebeg">
+                        <img src="images/ngerebeg.jpg" alt="Ngerebeg"> 
+                        <img src="images/ngerebeg-1.jpg" alt="Ngerebeg">     
+                    </div>    
+                    <div class="card-text">
+                        <h5>Ngerebeg</h5>
+                        <p>A ritual offering to the village’s unseen spiritual guardians</p>
+                        <input type="checkbox" id="toggle3" class="toggle-more"/>
+                        <label for="toggle3" class="btn-3 selengkapnya-btn"><span>More Info</span></label>
+                        <div class="more-text">
+                            <br>
+                            <p>
+                                The Ngerebeg ceremony is held annually on Tilem Kawolu (the eighth new moon). This ceremony is a form of offering to the village’s spiritual guardians in the unseen realm (niskala), intended to maintain the balance and safety of the village.
+                                <br>
+                                The tradition involves several stages, such as megibung (communal dining), ngocorin, and a procession around the village.
+                                <br>
+                                The megibung in this ceremony is different from that in the Negakang tradition. In Ngerebeg, the megibung is dedicated specifically to the unseen spiritual guardians of the village.
+                                <br>
+                               <a href="https://desasambirenteng.blogspot.com/2015/07/upacara-ngerebeg.html">More details...</a>
+                            </p>
+                        </div>
+                    </div>   
+                </div>
+    </section>
+
+    <section id="wisata">
+        <div class="wisata-content">
+                <h2>Natural Tourism</h2>
+                <p>
+                    Sambirenteng is also known for its natural beauty. Tourist spots include:
+                </p>
+
+                <div class="wisata-list">
+                    <div class="wisata-item">
+                        <img src="images/pantai.jpg" alt="Sambirenteng Beach" class="thumb">
+                        <video class="video" src="video/pantai.mp4" muted loop></video>
+                        <h5>Sambirenteng Beach</h5>
+                        <p>
+                            A beautiful black sand beach with sunrise views, clear waters for snorkeling over coral reefs, and traditional boat rides.
+                        </p>
+                    </div>
+                    <div class="wisata-item">
+                        <img src="images/sunset.jpg" alt="Air Terjun Sambirenteng" class="thumb">
+                        <video class="video" src="video/sunset.mp4" muted loop></video>
+                        <h5>Sunrise Trekking</h5>
+                        <p>
+                            A morning hike through the scenic Sanghyang hills, fresh air, and sunrise views with light breakfast.
+                        </p>
+                    </div>
+                    <div class="wisata-item">
+                        <img src="images/air terjun.jpg" alt="Bukit Sambirenteng" class="thumb">
+                        <video class="video" src="video/airterjun.mp4" muted loop></video>
+                        <h5>Yeh Mampeh Waterfall</h5>
+                        <p>
+                            Located in nearby Les village, this hidden waterfall remains pristine and tranquil—ideal for those seeking peace away from the city.
+                        </p>
+                    </div>
+                    <div class="wisata-item">
+                        <img src="images/palm sugar.jpg" alt="Bukit Sambirenteng" class="thumb">
+                        <video class="video" src="video/palm sugar.mp4" muted loop></video>
+                        <h5>Making Palm Sugar</h5>
+                        <p>
+                            Sambirenteng is known for high-quality palm sugar. Visitors can learn the traditional process—from tapping sap, boiling, to forming sugar blocks.
+                        </p>
+                    </div>
+                    
+                </div>
+            </div>
+    </section>
+
+    <footer id="footer">
+        <div class="footer-content">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31595.066450552924!2d115.40576854999999!3d-8.16408155!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd1f1c32ef94293%3A0x83af7640ca97677c!2sSambirenteng%2C%20Kec.%20Tejakula%2C%20Kabupaten%20Buleleng%2C%20Bali!5e0!3m2!1sid!2sid!4v1747913186680!5m2!1sid!2sid" width="200" height="150" style="border: solid 1 #626F47" 
+            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <p>&copy; 2025 Sambirenteng. All rights reserved.</p>
+        </div>
+
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

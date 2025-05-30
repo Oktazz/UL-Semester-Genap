@@ -307,11 +307,6 @@ body{
     opacity: 1;
 }
 
-.card-text .toggle-more:checked ~ .more-text2 {
-    max-height: 325px;
-    opacity: 1;
-}
-
 /* Tombol Selengkapnya */
 .selengkapnya-btn {
     position: relative;
@@ -361,7 +356,7 @@ body{
     color: white;
     padding: 5px 14px;
     text-align: center;
-    margin-top: 62px;
+    margin-top: 20px;
     border-radius: 5px;
     position: relative;
 }
@@ -383,7 +378,7 @@ body{
     color: white;
     padding: 5px 14px;
     text-align: center;
-    margin-top: 62px;
+    margin-top: 40px;
     border-radius: 5px;
     position: relative;
 }
@@ -439,7 +434,7 @@ body{
 
 .wisata-item{
     width: 300px;
-    height: 550px;
+    height: 450px;
     background-color: #F5ECD5;
     padding: 10px;
     border-radius: 5px;

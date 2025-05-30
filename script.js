@@ -74,3 +74,30 @@ window.addEventListener('scroll', () => {
     }
   });
 });
+
+
+// pemilihan bahasa
+function showLanguagePopup() {
+  document.getElementById('language-selector').style.display = 'flex';
+  document.body.classList.add('no-scroll'); // mencegah scroll
+}
+
+function goToLanguage(lang) {
+  localStorage.setItem('selectedLanguage', lang); // simpan pilihan bahasa
+  if (lang === 'id') {
+    window.location.href = 'index-id.html';
+  } else if (lang === 'en') {
+    window.location.href = 'index-en.html';
+  }
+}
+
+window.addEventListener('DOMContentLoaded', () => {
+  const selectedLang = localStorage.getItem('selectedLanguage');
+  if (selectedLang) {
+    document.getElementById('language-selector').style.display = 'none';
+    document.body.classList.remove('no-scroll');
+  } else {
+    document.getElementById('language-selector').style.display = 'flex';
+    document.body.classList.add('no-scroll');
+  }
+});
