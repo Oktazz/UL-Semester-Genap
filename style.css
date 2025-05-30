@@ -484,7 +484,7 @@ body{
 
 
 
-@media only screen and (max-width: 1080px) {
+@media (max-width: 768px) {
     .nav {
         flex-wrap: wrap;
         height: 80px;
